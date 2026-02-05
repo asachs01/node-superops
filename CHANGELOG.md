@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/asachs01/node-superops/compare/v1.0.0...v1.0.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* Add missing ESLint dependencies ([ba19525](https://github.com/asachs01/node-superops/commit/ba19525245060c06823478a45de5eaec7c859342))
+
 # 1.0.0 (2026-02-05)
 
 
