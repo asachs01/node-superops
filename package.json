@@ -1,0 +1,62 @@
+{
+  "name": "node-superops",
+  "version": "0.1.0",
+  "description": "Comprehensive, fully-typed Node.js/TypeScript library for the SuperOps.ai GraphQL API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asachs01/node-superops.git"
+  },
+  "keywords": [
+    "superops",
+    "superops.ai",
+    "msp",
+    "rmm",
+    "psa",
+    "api",
+    "graphql",
+    "typescript"
+  ],
+  "author": "Aaron Sachs / WYRE Technology",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/asachs01/node-superops/issues"
+  },
+  "homepage": "https://github.com/asachs01/node-superops#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "msw": "^2.12.8",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "graphql": "^16.10.0",
+    "graphql-request": "^7.1.2"
+  }
+}
