@@ -276,7 +276,7 @@ export const handlers = [
       return HttpResponse.json(authenticationError);
     }
 
-    const { first, after } = variables as { first?: number; after?: string };
+    const { first: _first, after } = variables as { first?: number; after?: string };
 
     // Simulate pagination
     if (after === 'cursor-page1') {
@@ -454,7 +454,7 @@ export const handlers = [
       return HttpResponse.json(authenticationError);
     }
 
-    const { ticketId, note, isPublic } = variables as {
+    const { ticketId: _ticketId, note, isPublic: _isPublic } = variables as {
       ticketId: string;
       note: string;
       isPublic?: boolean;
