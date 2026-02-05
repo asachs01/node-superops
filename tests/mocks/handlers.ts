@@ -454,7 +454,7 @@ export const handlers = [
       return HttpResponse.json(authenticationError);
     }
 
-    const { ticketId: _ticketId, note, isPublic: _isPublic } = variables as {
+    const { ticketId: _ticketId, note, isPublic } = variables as {
       ticketId: string;
       note: string;
       isPublic?: boolean;
